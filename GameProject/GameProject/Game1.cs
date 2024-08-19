@@ -1,64 +1,87 @@
-﻿using Microsoft.Xna.Framework;
+﻿using GameProject.Level;
+using GameProject.Menu;
+using GameProject.Objects;
+using GameProject.Objects.Playable_Characters;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using MonoGame.Extended.Screens;
+using MonoGame.Extended.Screens.Transitions;
+using System.Collections.Generic;
+using System.Diagnostics;
 
 namespace GameProject
 {
-    public class Game1 : Game
+    public class Game1 : Game, GameState
     {
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
-        private Texture2D _texture;
-        private Rectangle _deelRectangle;
-        private int schuifOp_X = 0;
-        float scale = 5.0f;
+        private ScreenManager _screenManager;
 
+        public currentGameState StateOfGame { get; set; }
+        public currentPlayerState StateOfPlayer { get; set; }
+        public currentGameState PreviousStateOfGame { get; set; }
+        public Player Player { get; set; }
         public Game1()
         {
             _graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
             IsMouseVisible = true;
-        }
 
+
+            _screenManager = new ScreenManager();
+            Components.Add(_screenManager);
+        }
         protected override void Initialize()
         {
-            // TODO: Add your initialization logic here
-            _deelRectangle = new Rectangle(schuifOp_X, 0, 8, 8);
             base.Initialize();
+            StateOfGame = currentGameState.Menu;
         }
-
         protected override void LoadContent()
         {
             _spriteBatch = new SpriteBatch(GraphicsDevice);
-
-            // TODO: use this.Content to load your game content here
-            _texture = Content.Load<Texture2D>("wizard spritesheet v2");
-
         }
-
         protected override void Update(GameTime gameTime)
         {
-            if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
-                Exit();
 
-            // TODO: Add your update logic here
+            if (PreviousStateOfGame != StateOfGame)
+                switch (StateOfGame)
+                {
+                    case currentGameState.level1:
+                        _screenManager.LoadScreen(new Level1(this), new FadeTransition(GraphicsDevice, Color.Black));
+                        break;
+                    case currentGameState.level2:
+                        _screenManager.LoadScreen(new Level2(this), new FadeTransition(GraphicsDevice, Color.Black));
+                        break;
+                    case currentGameState.level3:
+                        _screenManager.LoadScreen(new Level3(this), new FadeTransition(GraphicsDevice, Color.Black));
+                        break;
+                    case currentGameState.Menu:
+                        _screenManager.LoadScreen(new MenuState(this), new FadeTransition(GraphicsDevice, Color.Black));
+                        break;
+                    case currentGameState.GameOver:
+                        _screenManager.LoadScreen(new GameOverPanel(this), new FadeTransition(GraphicsDevice, Color.Black));
+                        break;
+                    default:
+                        break;
+                }
+
+            PreviousStateOfGame = StateOfGame;
 
             base.Update(gameTime);
         }
-
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.CornflowerBlue);
-            _spriteBatch.Begin(samplerState: SamplerState.PointClamp);
-            _spriteBatch.Draw(_texture, new Vector2(0, 0), _deelRectangle, Color.White, 0f, new Vector2(0, 0), scale, SpriteEffects.None,0f);
-            _spriteBatch.End();
+            GraphicsDevice.Clear(Color.LightBlue);
 
-            schuifOp_X += 8;
-            if (schuifOp_X > 23)
-            {
-                schuifOp_X = 0;
-            }
-            _deelRectangle.X = schuifOp_X;
+            _spriteBatch.Begin(samplerState: SamplerState.PointClamp);
+            if (StateOfGame == currentGameState.GameOver)
+                if (StateOfPlayer == currentPlayerState.Win)
+                    _spriteBatch.DrawString(Content.Load<SpriteFont>("Fonts\\Font"), $"You WIN", new Vector2(330, 150), Color.Green);
+                else
+                    _spriteBatch.DrawString(Content.Load<SpriteFont>("Fonts\\Font"), $"You Lost", new Vector2(330, 150), Color.Red);
+
+            _spriteBatch.End();
 
             base.Draw(gameTime);
         }

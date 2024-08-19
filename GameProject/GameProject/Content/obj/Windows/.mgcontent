@@ -4,9 +4,43 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/User/source/repos/GameProject/GameProject/GameProject/Content/wizard spritesheet v2.png</File>
+    <File>C:/Users/User/source/repos/GameProject/GameProject/GameProject/Content/Button.png</File>
+    <File>C:/Users/User/source/repos/GameProject/GameProject/GameProject/Content/Controls/ButtonImage.png</File>
+    <File>C:/Users/User/source/repos/GameProject/GameProject/GameProject/Content/Enemy1.png</File>
+    <File>C:/Users/User/source/repos/GameProject/GameProject/GameProject/Content/Enemy2.png</File>
+    <File>C:/Users/User/source/repos/GameProject/GameProject/GameProject/Content/Enemy3.png</File>
+    <File>C:/Users/User/source/repos/GameProject/GameProject/GameProject/Content/Fire Missile.png</File>
+    <File>C:/Users/User/source/repos/GameProject/GameProject/GameProject/Content/Fonts/as.spritefont</File>
+    <File>C:/Users/User/source/repos/GameProject/GameProject/GameProject/Content/Fonts/Font.spritefont</File>
+    <File>C:/Users/User/source/repos/GameProject/GameProject/GameProject/Content/Fonts/Fonts2.fx</File>
+    <File>C:/Users/User/source/repos/GameProject/GameProject/GameProject/Content/Health_Kit.png</File>
+    <File>C:/Users/User/source/repos/GameProject/GameProject/GameProject/Content/Player/wizardRunDown.png</File>
+    <File>C:/Users/User/source/repos/GameProject/GameProject/GameProject/Content/Player/wizardRunRight.png</File>
+    <File>C:/Users/User/source/repos/GameProject/GameProject/GameProject/Content/Player/wizardRunUp.png</File>
+    <File>C:/Users/User/source/repos/GameProject/GameProject/GameProject/Content/Player/wizardShootDown.png</File>
+    <File>C:/Users/User/source/repos/GameProject/GameProject/GameProject/Content/Player/wizardShootRight.png</File>
+    <File>C:/Users/User/source/repos/GameProject/GameProject/GameProject/Content/Player/wizardShootUp.png</File>
+    <File>C:/Users/User/source/repos/GameProject/GameProject/GameProject/Content/TileMap/objects36x36.png</File>
+    <File>C:/Users/User/source/repos/GameProject/GameProject/GameProject/Content/tutorial info.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
   </DestFiles>
 </SourceFileCollection>

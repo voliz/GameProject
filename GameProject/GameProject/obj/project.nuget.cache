@@ -1,9 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "AIVM1HDrNgVIXlMgFFvfa6C5n5NVBS5eIkeTopN0rdwbpeK48unnp7AkUYFG/S4lul/2L3SOXF7s4opq990RAA==",
+  "dgSpecHash": "+RsHqouxOio=",
   "success": true,
   "projectFilePath": "C:\\Users\\User\\source\\repos\\GameProject\\GameProject\\GameProject\\GameProject.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\User\\.nuget\\packages\\apos.gui\\2.0.3\\apos.gui.2.0.3.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\apos.input\\2.4.2\\apos.input.2.4.2.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\apos.tweens\\0.1.3\\apos.tweens.0.1.3.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\autofac\\5.2.0\\autofac.5.2.0.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\cyotek.drawing.bitmapfont\\2.0.4\\cyotek.drawing.bitmapfont.2.0.4.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\fontstashsharp.base\\1.1.8\\fontstashsharp.base.1.1.8.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\fontstashsharp.monogame\\1.2.8\\fontstashsharp.monogame.1.2.8.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\fontstashsharp.rasterizers.stbtruetypesharp\\1.1.8\\fontstashsharp.rasterizers.stbtruetypesharp.1.1.8.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\libuv\\1.9.1\\libuv.1.9.1.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\1.1.0\\microsoft.codeanalysis.analyzers.1.1.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.codeanalysis.common\\1.3.0\\microsoft.codeanalysis.common.1.3.0.nupkg.sha512",
@@ -23,6 +31,9 @@
     "C:\\Users\\User\\.nuget\\packages\\microsoft.win32.primitives\\4.0.1\\microsoft.win32.primitives.4.0.1.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.win32.registry\\4.0.0\\microsoft.win32.registry.4.0.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\monogame.content.builder.task\\3.8.1.303\\monogame.content.builder.task.3.8.1.303.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\monogame.extended\\4.0.0\\monogame.extended.4.0.0.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\monogame.extended.content.pipeline\\4.0.0\\monogame.extended.content.pipeline.4.0.0.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\monogame.framework.desktopgl\\3.8.1.303\\monogame.framework.desktopgl.3.8.1.303.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\monogame.framework.windowsdx\\3.8.1.303\\monogame.framework.windowsdx.3.8.1.303.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\netstandard.library\\1.6.0\\netstandard.library.1.6.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\runtime.native.system\\4.0.0\\runtime.native.system.4.0.0.nupkg.sha512",
@@ -39,6 +50,8 @@
     "C:\\Users\\User\\.nuget\\packages\\sharpdx.mediafoundation\\4.0.1\\sharpdx.mediafoundation.4.0.1.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\sharpdx.xaudio2\\4.0.1\\sharpdx.xaudio2.4.0.1.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\sharpdx.xinput\\4.0.1\\sharpdx.xinput.4.0.1.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\stbimagesharp\\2.27.13\\stbimagesharp.2.27.13.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\stbtruetypesharp\\1.26.11\\stbtruetypesharp.1.26.11.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\system.appcontext\\4.1.0\\system.appcontext.4.1.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\system.buffers\\4.0.0\\system.buffers.4.0.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\system.collections\\4.0.11\\system.collections.4.0.11.nupkg.sha512",
@@ -124,7 +137,11 @@
     "C:\\Users\\User\\.nuget\\packages\\system.xml.xdocument\\4.0.11\\system.xml.xdocument.4.0.11.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\system.xml.xmldocument\\4.0.1\\system.xml.xmldocument.4.0.1.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\system.xml.xpath\\4.0.1\\system.xml.xpath.4.0.1.nupkg.sha512",
-    "C:\\Users\\User\\.nuget\\packages\\system.xml.xpath.xdocument\\4.0.1\\system.xml.xpath.xdocument.4.0.1.nupkg.sha512"
+    "C:\\Users\\User\\.nuget\\packages\\system.xml.xpath.xdocument\\4.0.1\\system.xml.xpath.xdocument.4.0.1.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.31\\microsoft.windowsdesktop.app.ref.6.0.31.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.31\\microsoft.netcore.app.ref.6.0.31.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.31\\microsoft.aspnetcore.app.ref.6.0.31.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.31\\microsoft.netcore.app.host.win-x64.6.0.31.nupkg.sha512"
   ],
   "logs": []
 }
